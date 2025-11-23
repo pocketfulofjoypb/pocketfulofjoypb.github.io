@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo booth rental services and packages for weddings, parties, and events in Pottstown, PA">
+    <title>Services & Packages | Pocketful of Joy</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#fa34ae',
+                        'brand-yellow': '#fcfd47',
+                        'light-pink': '#ffc3e9',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; opacity: 0; }
+        .delay-200 { animation-delay: 0.2s; opacity: 0; }
+        .delay-300 { animation-delay: 0.3s; opacity: 0; }
+        .delay-400 { animation-delay: 0.4s; opacity: 0; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-brand-pink">
+                    Pocketful of Joy
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">About</a></li>
+                    <li><a href="services.html" class="text-brand-pink font-semibold">Services</a></li>
+                    <li><a href="gallery.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">Gallery</a></li>
+                    <li><a href="contact.html" class="bg-brand-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-all font-semibold shadow-md hover:shadow-lg">Get a Quote</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">About</a>
+                <a href="services.html" class="block text-brand-pink font-semibold">Services</a>
+                <a href="gallery.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">Gallery</a>
+                <a href="contact.html" class="block text-center bg-brand-pink text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-all font-semibold">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-pink via-pink-400 to-light-pink"></div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-brand-yellow rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-80 h-80 bg-white rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
+            <span class="inline-block bg-brand-yellow text-gray-900 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6 fade-in-up">
+                Our Services
+            </span>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight fade-in-up delay-100">
+                Everything You Need for an<br/>Unforgettable Experience
+            </h1>
+
+            <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto fade-in-up delay-200">
+                Professional photo booth services for all your special occasions
+            </p>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What's Included</h2>
+                <div class="w-20 h-1 bg-brand-pink mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Every Pocketful of Joy rental comes with everything you need to create amazing memories at your event
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        🎬
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Modern Photo Booth</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our sleek iPad-based photo booth system is easy to use and delivers high-quality photos. Perfect for guests of all ages!
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        🎨
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Backdrops</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Choose from our selection of backdrops or work with us to create a custom design that matches your event's theme and colors.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        🎭
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Fun Props</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We provide a wide variety of props including hats, glasses, signs, and more to add creativity and fun to your photos.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        🖨️
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Instant Prints</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Guests receive high-quality printed photos within seconds. A perfect keepsake to take home from your event!
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        📱
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Digital Sharing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Photos can be instantly shared via text, email, or social media. Your guests can post their favorites right away!
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-light-pink/30">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                        👥
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Professional Setup</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our team handles all setup and breakdown, and we're on-site to ensure everything runs smoothly throughout your event.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="py-20 bg-gradient-to-br from-light-pink/30 via-pink-100/30 to-light-pink/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Perfect For Any Event</h2>
+                <div class="w-20 h-1 bg-brand-pink mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    No matter what you're celebrating, we're here to make it memorable
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Event Type 1 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">💒</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Weddings</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Add entertainment and capture candid moments from your special day
+                    </p>
+                </div>
+
+                <!-- Event Type 2 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">🎉</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Birthday Parties</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Make any birthday celebration more memorable and fun
+                    </p>
+                </div>
+
+                <!-- Event Type 3 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">🎓</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Graduations</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Celebrate achievements with friends and family
+                    </p>
+                </div>
+
+                <!-- Event Type 4 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Corporate Events</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Perfect for holiday parties, conferences, and team building events
+                    </p>
+                </div>
+
+                <!-- Event Type 5 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">🎊</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Anniversaries</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Commemorate milestones with fun photos
+                    </p>
+                </div>
+
+                <!-- Event Type 6 -->
+                <div class="bg-white rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4">✨</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Any Celebration</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Whatever you're celebrating, we're here to help!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-brand-pink to-pink-400">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Book Your Event?
+            </h2>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
+                Contact us today to discuss your event and receive a personalized quote
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-brand-pink px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                Request Your Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-pink mb-4">Pocketful of Joy</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Where every memory is a pocketful of joy! Professional photo booth rentals in Pottstown, PA.
+                    </p>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand-pink transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-brand-pink transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-brand-pink transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-brand-pink transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-pink transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>
+                            <a href="tel:6104067666" class="hover:text-brand-pink transition-colors">
+                                📞 (610) 406-7666
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pocketfulofjoypb@gmail.com" class="hover:text-brand-pink transition-colors">
+                                ✉️ pocketfulofjoypb@gmail.com
+                            </a>
+                        </li>
+                        <li>📍 Pottstown, PA and surrounding areas</li>
+                    </ul>
+
+                    <div class="mt-6 flex space-x-4">
+                        <a href="https://www.instagram.com/PocketfulofJoyPhoto" target="_blank" class="bg-brand-pink hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all font-medium">
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com/PocketfulofJoy" target="_blank" class="bg-brand-pink hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all font-medium">
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Pocketful of Joy LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

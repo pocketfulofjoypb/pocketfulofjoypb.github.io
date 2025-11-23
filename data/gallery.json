@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "src": "images/sample1.jpg",
+      "alt": "Wedding photo booth fun with props"
+    },
+    {
+      "src": "images/sample2.jpg",
+      "alt": "Birthday party celebration"
+    },
+    {
+      "src": "images/sample3.jpg",
+      "alt": "Corporate event networking"
+    },
+    {
+      "src": "images/sample4.jpg",
+      "alt": "Graduation celebration photos"
+    },
+    {
+      "src": "images/sample5.jpg",
+      "alt": "Anniversary party memories"
+    },
+    {
+      "src": "images/sample6.jpg",
+      "alt": "Fun props and backdrops"
+    }
+  ]
+}
+

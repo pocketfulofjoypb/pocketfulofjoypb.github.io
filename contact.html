@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Pocketful of Joy for a quote - Photo booth rentals in Pottstown, PA">
+    <title>Contact & Quote Request | Pocketful of Joy</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#fa34ae',
+                        'brand-yellow': '#fcfd47',
+                        'light-pink': '#ffc3e9',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; opacity: 0; }
+        .delay-200 { animation-delay: 0.2s; opacity: 0; }
+        .delay-300 { animation-delay: 0.3s; opacity: 0; }
+        .delay-400 { animation-delay: 0.4s; opacity: 0; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-brand-pink">
+                    Pocketful of Joy
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">About</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">Services</a></li>
+                    <li><a href="gallery.html" class="text-gray-700 hover:text-brand-pink transition-colors font-medium">Gallery</a></li>
+                    <li><a href="contact.html" class="text-brand-pink font-semibold">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">About</a>
+                <a href="services.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">Services</a>
+                <a href="gallery.html" class="block text-gray-700 hover:text-brand-pink transition-colors font-medium">Gallery</a>
+                <a href="contact.html" class="block text-brand-pink font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-pink via-pink-400 to-light-pink"></div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-brand-yellow rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-80 h-80 bg-white rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
+            <span class="inline-block bg-brand-yellow text-gray-900 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-6 fade-in-up">
+                Get In Touch
+            </span>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight fade-in-up delay-100">
+                Request Your<br/>Free Quote
+            </h1>
+
+            <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto fade-in-up delay-200">
+                Let's make your event unforgettable!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <!-- Left Column - Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Let's Talk!</h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Ready to book a photo booth for your event? Fill out the form and we'll get back to you with a personalized quote as soon as possible!
+                        </p>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <!-- Phone -->
+                        <div class="bg-gradient-to-br from-light-pink/30 to-pink-100/30 rounded-3xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                                    📞
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 mb-1">Phone</h3>
+                                    <a href="tel:6104067666" class="text-brand-pink font-semibold hover:underline text-lg">
+                                        (610) 406-7666
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="bg-gradient-to-br from-light-pink/30 to-pink-100/30 rounded-3xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                                    ✉️
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 mb-1">Email</h3>
+                                    <a href="mailto:pocketfulofjoypb@gmail.com" class="text-brand-pink font-semibold hover:underline break-all">
+                                        pocketfulofjoypb@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="bg-gradient-to-br from-light-pink/30 to-pink-100/30 rounded-3xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                                    📍
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 mb-1">Service Area</h3>
+                                    <p class="text-gray-700">Pottstown, PA and surrounding areas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Response Time -->
+                        <div class="bg-gradient-to-br from-light-pink/30 to-pink-100/30 rounded-3xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-brand-pink to-pink-400 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                                    ⏰
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-900 mb-1">Response Time</h3>
+                                    <p class="text-gray-700">We typically respond within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Book With Us -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-light-pink/30">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Why Book With Us?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-brand-pink mr-2 text-xl">✓</span>
+                                <span class="text-gray-700">Professional and reliable service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-pink mr-2 text-xl">✓</span>
+                                <span class="text-gray-700">High-quality photos and prints</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-pink mr-2 text-xl">✓</span>
+                                <span class="text-gray-700">Custom packages for your event</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-pink mr-2 text-xl">✓</span>
+                                <span class="text-gray-700">Competitive pricing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-pink mr-2 text-xl">✓</span>
+                                <span class="text-gray-700">Easy booking process</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Google Form -->
+                <div>
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-light-pink/30">
+                        <h3 class="text-2xl font-bold text-brand-pink mb-6">Quote Request Form</h3>
+
+                        <!--
+                        ====================================
+                        INSTRUCTIONS TO ADD GOOGLE FORM:
+                        ====================================
+                        1. Go to forms.google.com and create a new form
+                        2. Add these fields:
+                           - Name (Short answer)
+                           - Email (Short answer)
+                           - Phone Number (Short answer)
+                           - Event Type (Dropdown: Wedding, Birthday Party, Corporate Event, Graduation, Anniversary, Other)
+                           - Event Date (Date)
+                           - Event Location (Short answer)
+                           - Estimated Guest Count (Short answer)
+                           - Additional Details (Paragraph)
+
+                        3. Click the "Send" button (top right)
+                        4. Click the "<>" embed icon
+                        5. Copy the iframe code
+                        6. Replace the placeholder div below with your iframe code
+
+                        Example format:
+                        <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+                                width="100%"
+                                height="1200"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0">
+                            Loading…
+                        </iframe>
+                        ====================================
+                        -->
+
+                        <!-- REPLACE THIS DIV WITH YOUR GOOGLE FORM IFRAME -->
+                        <div class="bg-gradient-to-br from-light-pink/50 to-pink-100/50 p-8 rounded-2xl text-center border-3 border-dashed border-brand-pink/30">
+                            <div class="text-6xl mb-4">📋</div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3">Google Form Goes Here</h4>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Follow the instructions in the code comments to create and embed your Google Form.
+                            </p>
+                            <p class="text-gray-500 text-sm italic mb-6">
+                                Once you add your Google Form iframe code, this placeholder will be replaced with your actual form.
+                            </p>
+                            <div class="pt-4 border-t border-brand-pink/20">
+                                <p class="text-gray-900 font-semibold mb-3">For now, contact us directly:</p>
+                                <div class="space-y-2">
+                                    <a href="tel:6104067666" class="block text-brand-pink font-bold text-lg hover:underline">
+                                        📞 (610) 406-7666
+                                    </a>
+                                    <a href="mailto:pocketfulofjoypb@gmail.com" class="block text-brand-pink font-bold hover:underline break-all">
+                                        ✉️ pocketfulofjoypb@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-pink mb-4">Pocketful of Joy</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Where every memory is a pocketful of joy! Professional photo booth rentals in Pottstown, PA.
+                    </p>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand-pink transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-brand-pink transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-brand-pink transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-brand-pink transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-pink transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>
+                            <a href="tel:6104067666" class="hover:text-brand-pink transition-colors">
+                                📞 (610) 406-7666
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pocketfulofjoypb@gmail.com" class="hover:text-brand-pink transition-colors">
+                                ✉️ pocketfulofjoypb@gmail.com
+                            </a>
+                        </li>
+                        <li>📍 Pottstown, PA and surrounding areas</li>
+                    </ul>
+
+                    <div class="mt-6 flex space-x-4">
+                        <a href="https://www.instagram.com/PocketfulofJoyPhoto" target="_blank" class="bg-brand-pink hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all font-medium">
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com/PocketfulofJoy" target="_blank" class="bg-brand-pink hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all font-medium">
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Pocketful of Joy LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
