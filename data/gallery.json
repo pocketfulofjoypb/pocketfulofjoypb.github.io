@@ -1,26 +1,40 @@
 {
   "images": [
     {
-      "src": "images/sample1.jpg",
-      "alt": "Wedding photo booth fun with props"
+      "src": "images/our_attendants.jpg",
+      "alt": "Our attendants are the star of the show! There to guide your experience!"
     },
     {
-      "src": "images/sample2.jpg",
-      "alt": "Birthday party celebration"
+      "src": "images/custom_christmas.jpg",
+      "alt": "Custom Christmas Props"
     },
     {
-      "src": "images/sample3.jpg",
-      "alt": "Corporate event networking"
+      "src": "images/celebrating_love.jpg",
+      "alt": "Celebrating Love"
     },
     {
-      "src": "images/sample4.jpg",
-      "alt": "Graduation celebration photos"
+      "src": "images/enjoyed_by.jpg",
+      "alt": "Enjoyed by generations"
     },
     {
-      "src": "images/sample5.jpg",
-      "alt": "Anniversary party memories"
+      "src": "images/bringing_out.JPG",
+      "alt": "Bringing out the laughter in everyone!"
+    },
+    {
+      "src": "images/capturing_family.JPG",
+      "alt": "Capturing family memories"
+    },
+    {
+      "src": "images/a_view.jpg",
+      "alt": "A view from behind the camera"
+    },
+    {
+      "src": "images/custom_photo.JPG",
+      "alt": "Custom photo templates for all events!"
+    },
+    {
+      "src": "images/kitchen_kettles.JPG",
+      "alt": "Kitchen Kettle's mascot is our #1 fan!"
     }
-
   ]
 }
-
